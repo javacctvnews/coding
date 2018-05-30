@@ -22,6 +22,19 @@ public class App {
         String reverseStr = sb.toString();
         System.out.println(reverseStr);
     }
+    
+    @Test
+    public void test002() {
+    	String str = "abcdefg";
+    	StringBuffer sb = new StringBuffer();
+    	sb.append(str);
+    	sb.reverse();
+    	String reverseStr = sb.toString();
+    	System.out.println(reverseStr);
+    }
+    
+    
+    
 
 
 }
