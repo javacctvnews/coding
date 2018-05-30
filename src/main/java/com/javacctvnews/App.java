@@ -15,6 +15,7 @@ public class App {
 
     @Test
     public void test001() {
+
         String str = "abcdefg";
         StringBuffer sb = new StringBuffer();
         sb.append(str);
