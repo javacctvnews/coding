@@ -25,13 +25,19 @@ public class App {
     
     @Test
     public void test002() {
-    	String str = "abcdefg";
-    	StringBuffer sb = new StringBuffer();
-    	sb.append(str);
-    	sb.reverse();
-    	String reverseStr = sb.toString();
-    	System.out.println(reverseStr);
+    	int[] arr = {2,3,7,4,6,6};
+    	for(int i=0;i<arr.length;i++){
+    		for (int j = i+1; j < arr.length-i; j++) {
+    			System.out.println(arr[i]+"-->"+arr[j]);
+				if(arr[i]+arr[j]==9){
+					System.out.println("["+i+" "+j+"]");
+				}
+			}
+    	}
+    	
     }
+    
+    
     
     
     public static String parseByte2HexStr(byte buf[]) {
