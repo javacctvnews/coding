@@ -22,20 +22,22 @@ public class App {
         sb.reverse();
         String reverseStr = sb.toString();
         System.out.println(reverseStr);
+        int[] ints = test002();
+        System.out.println(ints);
     }
     
-    @Test
-    public void test002() {
+
+
+    public int[] test002() {
     	int[] arr = {2,3,7,4,6,6};
     	for(int i=0;i<arr.length;i++){
     		for (int j = i+1; j < arr.length-i; j++) {
-    			System.out.println(arr[i]+"-->"+arr[j]);
 				if(arr[i]+arr[j]==9){
-					System.out.println("["+i+" "+j+"]");
+					return new int[]{i,j};
 				}
 			}
     	}
-    	
+    	return null;
     }
     
     
