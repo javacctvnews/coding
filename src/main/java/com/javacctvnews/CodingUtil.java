@@ -8,7 +8,7 @@ import org.junit.Test;
  * Desc：
  */
 
-public class App {
+public class CodingUtil {
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
